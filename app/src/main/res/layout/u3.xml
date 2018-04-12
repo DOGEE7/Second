@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cst.hqu.edu.cn.secondandroid.u3">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/fox"/>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ele"/>
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/gf" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/mon"/>
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/pig" />
+
+    <Button
+        android:id="@+id/bnreturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:text="返回" />
+
+
+</FrameLayout>
