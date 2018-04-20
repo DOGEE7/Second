@@ -12,7 +12,6 @@ public class u5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.u5);
-        Log.i("u5","Are you ok?");
         Button bnreturn = (Button) findViewById(R.id.bnreturn);
         bnreturn.setOnClickListener(new View.OnClickListener() {
             @Override

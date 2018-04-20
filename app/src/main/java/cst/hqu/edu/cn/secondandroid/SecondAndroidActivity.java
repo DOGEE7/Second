@@ -53,9 +53,7 @@ public class SecondAndroidActivity extends AppCompatActivity {
         bn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("u5","Are you ok?");
                 Intent intent  = new Intent (SecondAndroidActivity.this,u5.class);
-
                 startActivity(intent);
             }
         });

@@ -7,20 +7,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="cst.hqu.edu.cn.secondandroid.u4">
-
+<!--定义第一个表格布局，指定第一列和第二例可以被拉伸-->
     <TableLayout
         android:id="@+id/tablelayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="0,1"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="60dp"
+        android:stretchColumns="0,1">
+        <!--添加一个表格行，为表格行添加2个按钮-->
         <TableRow>
             <Button
                 android:id="@+id/bn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="第一个Button"
                 android:shadowColor="#aa5"
+                android:text="第一个Button"
                 android:textAllCaps="false"/>
 
             <Button
@@ -30,6 +31,7 @@
                 android:text="第二个Button"
                 android:textAllCaps="false"/>
         </TableRow>
+        <!--直接添加按钮，独占一行-->
         <Button
             android:id="@+id/bn3"
             android:layout_width="wrap_content"
@@ -38,17 +40,16 @@
             android:text="第三个Button"
             android:textAllCaps="false" />
     </TableLayout>
-
+<!--定义第二个表格布局，指定第一列第二列允许被拉伸，第二列被隐藏-->
     <TableLayout
         android:id="@+id/tablelayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="0,1"
+        android:layout_marginTop="30dp"
         android:collapseColumns="1"
-        android:layout_marginTop="30dp">
+        android:stretchColumns="0,1">
 
         <TableRow android:layout_width="367dp">
-
             <Button
                 android:id="@+id/bn4"
                 android:layout_width="4dp"
@@ -65,14 +66,19 @@
         </TableRow>
     </TableLayout>
 
-    <Button
-        android:id="@+id/bnreturn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="返回" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="bottom"
+       android:orientation="vertical">
+       <Button
+           android:id="@+id/bnreturn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:text="返回" />
+   </LinearLayout>
 
 </LinearLayout>
 

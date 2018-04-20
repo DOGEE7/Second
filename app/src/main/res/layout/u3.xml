@@ -3,39 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cst.hqu.edu.cn.secondandroid.u3">
 
-    <ImageView
-        android:id="@+id/image1"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/fox"/>
-
-    <ImageView
-        android:id="@+id/image2"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/ele"/>
-
-    <ImageView
-        android:id="@+id/image3"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/gf" />
-
-    <ImageView
-        android:id="@+id/image4"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/mon"/>
-
-    <ImageView
-        android:id="@+id/image5"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/pig" />
+    <AdapterViewFlipper
+        android:id="@+id/fliper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:flipInterval="2000"></AdapterViewFlipper>
 
     <Button
         android:id="@+id/bnreturn"
