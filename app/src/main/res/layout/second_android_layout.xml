@@ -1,70 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|center_vertical"
     tools:context="cst.hqu.edu.cn.secondandroid.SecondAndroidActivity">
 
-    <LinearLayout
+
+
+    <Button
+        android:id="@+id/bn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线性布局"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+
+
+    <Button
+        android:id="@+id/bn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相对布局"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <Button
+        android:id="@+id/bn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帧布局"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <Button
+        android:id="@+id/bn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="表格布局"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <Button
+        android:id="@+id/bn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网格布局"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/bn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="线性布局"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="43dp" />
+        android:layout_height="wrap_content"
+        android:text="金雅妮"
+        android:layout_marginTop="100sp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
 
 
 
-        <Button
-            android:id="@+id/bn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="相对布局"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="112dp" />
-
-        <Button
-            android:id="@+id/bn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="帧布局"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="185dp" />
-
-        <Button
-            android:id="@+id/bn4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="表格布局"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="259dp" />
-
-        <Button
-            android:id="@+id/bn5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="网格布局"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="328dp" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="金雅妮"
-            android:layout_marginTop="100sp"
-            android:textColor="#000"
-            android:textSize="20sp"
-            android:gravity="center"
-            />
-    </LinearLayout>
-
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -12,18 +12,14 @@
         <activity android:name=".SecondAndroidActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".u1" />
-        <activity android:name=".u1_1" />
-        <activity android:name=".u1_2" />
-        <activity android:name=".u1_3" />
         <activity android:name=".u2" />
         <activity android:name=".u3" />
         <activity android:name=".u4" />
-        <activity android:name=".u5"></activity>
+        <activity android:name=".u5"/>
     </application>
 
 </manifest>

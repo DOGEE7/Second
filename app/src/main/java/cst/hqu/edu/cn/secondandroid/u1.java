@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class u1 extends AppCompatActivity {
 
@@ -12,13 +13,13 @@ public class u1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.u1);
-
-        Button bnhor = (Button) findViewById(R.id.bnhor);
+        final LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout);
+        final Button bnhor = (Button) findViewById(R.id.bnhor);
         bnhor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent  = new Intent (u1.this,u1_1.class);
-                startActivity(intent);
+
+                layout.setOrientation(LinearLayout.HORIZONTAL);
             }
         });
 
@@ -26,8 +27,7 @@ public class u1 extends AppCompatActivity {
         bnver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent  = new Intent (u1.this,u1_2.class);
-                startActivity(intent);
+                layout.setOrientation(LinearLayout.VERTICAL);
             }
         });
 
@@ -35,8 +35,8 @@ public class u1 extends AppCompatActivity {
         bnleft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent  = new Intent (u1.this,u1_3.class);
-                startActivity(intent);
+                layout.setOrientation(LinearLayout.VERTICAL);
+                layout.setGravity(LinearLayout.FOCUS_LEFT);
             }
         });
 
@@ -48,6 +48,5 @@ public class u1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }
