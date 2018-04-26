@@ -3,10 +3,8 @@ package cst.hqu.edu.cn.secondandroid;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 
 public class u1 extends AppCompatActivity {
 
@@ -14,13 +12,13 @@ public class u1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.u1);
-        final LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout);
-        final Button bnhor = (Button) findViewById(R.id.bnhor);
+
+        Button bnhor = (Button) findViewById(R.id.bnhor);
         bnhor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                layout.setOrientation(LinearLayout.HORIZONTAL);
+                Intent intent  = new Intent (u1.this,u1_1.class);
+                startActivity(intent);
             }
         });
 
@@ -28,7 +26,8 @@ public class u1 extends AppCompatActivity {
         bnver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                layout.setOrientation(LinearLayout.VERTICAL);
+                Intent intent  = new Intent (u1.this,u1_2.class);
+                startActivity(intent);
             }
         });
 
@@ -36,11 +35,8 @@ public class u1 extends AppCompatActivity {
         bnleft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-//此处相当于布局文件中的Android:layout_gravity属性
-                lp.gravity = Gravity.LEFT;
-//                layout.setOrientation(LinearLayout.VERTICAL);
-//                layout.setGravity(LinearLayout.SCROLLBAR_POSITION_LEFT);
+                Intent intent  = new Intent (u1.this,u1_3.class);
+                startActivity(intent);
             }
         });
 
@@ -52,5 +48,6 @@ public class u1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
