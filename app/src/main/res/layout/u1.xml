@@ -6,6 +6,7 @@
         android:layout_height="match_parent"
         android:gravity="bottom|center_horizontal"
         android:orientation="vertical"
+        android:id="@+id/root"
         tools:context="cst.hqu.edu.cn.secondandroid.u1">
 
     <LinearLayout

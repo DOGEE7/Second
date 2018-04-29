@@ -3,8 +3,10 @@ package cst.hqu.edu.cn.secondandroid;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class u1 extends AppCompatActivity {
 
@@ -12,13 +14,13 @@ public class u1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.u1);
+        final LinearLayout root = (LinearLayout)findViewById(R.id.linearLayout);
 
-        Button bnhor = (Button) findViewById(R.id.bnhor);
+        final Button bnhor = (Button) findViewById(R.id.bnhor);
         bnhor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent  = new Intent (u1.this,u1_1.class);
-                startActivity(intent);
+                root.setOrientation(LinearLayout.HORIZONTAL);
             }
         });
 
@@ -26,8 +28,7 @@ public class u1 extends AppCompatActivity {
         bnver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent  = new Intent (u1.this,u1_2.class);
-                startActivity(intent);
+                root.setOrientation(LinearLayout.VERTICAL);
             }
         });
 
@@ -35,8 +36,7 @@ public class u1 extends AppCompatActivity {
         bnleft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent  = new Intent (u1.this,u1_3.class);
-                startActivity(intent);
+                root.setGravity(View.FOCUS_LEFT);
             }
         });
 
