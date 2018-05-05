@@ -14,7 +14,8 @@ public class u1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.u1);
-        final LinearLayout root = (LinearLayout)findViewById(R.id.linearLayout);
+        final LinearLayout root = (LinearLayout)findViewById(R.id.root);
+        final LinearLayout layout = (LinearLayout)findViewById(R.id.layout);
 
         final Button bnhor = (Button) findViewById(R.id.bnhor);
         bnhor.setOnClickListener(new View.OnClickListener() {
@@ -32,11 +33,11 @@ public class u1 extends AppCompatActivity {
             }
         });
 
-        Button bnleft = (Button) findViewById(R.id.bnleft);
+        final Button bnleft = (Button) findViewById(R.id.bnleft);
         bnleft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                root.setGravity(View.FOCUS_LEFT);
+                layout.setGravity(View.SCROLL_INDICATOR_LEFT);
             }
         });
 

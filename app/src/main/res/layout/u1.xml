@@ -6,11 +6,11 @@
         android:layout_height="match_parent"
         android:gravity="bottom|center_horizontal"
         android:orientation="vertical"
-        android:id="@+id/root"
+        android:id="@+id/layout"
         tools:context="cst.hqu.edu.cn.secondandroid.u1">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/root"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
